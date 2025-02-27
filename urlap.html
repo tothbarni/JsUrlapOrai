@@ -20,111 +20,29 @@
         </ul>
       </nav>
         <article>
-            <form  > 
-                <fieldset class="marka">
-                    <legend>Auto neve</legend>
+            <form id="autoForm">
+                <fieldset>
+                    <legend>Autó Adatok</legend>
+                    
                     <div>
-
-                        <input type="text" name="nev" id="nev"  placeholder="Márka">
+                        <label for="nev">Autó neve:</label>
+                        <input type="text" id="nev" name="nev" required>
                     </div>
+        
                     <div>
-
-                        <input type="model" name="model" id="model" placeholder="Model" >
+                        <label for="kep">Kép URL:</label>
+                        <input type="url" id="kep" name="kep" required>
                     </div>
+        
                     <div>
-
-                        <input type="text" name="evjarat" id="evjarat" placeholder="Évjárat">
+                        <label for="ar">Ár:</label>
+                        <input type="text" id="ar" name="ar" required>
+                    </div>
+        
+                    <div class="gomb">
+                        <button type="submit">Beküldés</button>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Üzemanyag</legend>
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="benzin">Benzin</option>
-                        <option value="dizel">Dízel</option>
-                        <option value="hibrid">Hibrid</option>
-                    </select>
-                </fieldset>
-                <fieldset class="motor">
-                    
-                    <legend>Motor</legend>
-                    <p>Hengerűrtartalom:</p>
-                    <div class="specifikacio">
-                        <input type="radio" name="specifikacio" id="98">
-                        <label for="elso">4/1,498</label>
-                        <input type="radio" name="specifikacio" id="84">
-                        <label for="masodik">4/1,984</label>
-                        <input type="radio" name="specifikacio" id="68">
-                        <label for="harmadik">4/1,968</label>
-                        
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Teljesítmény</legend>
-                    <p>Végsebesség (km/h)</p>
-                    
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="225">225</option>
-                        <option value="248">248</option>
-                        <option value="225">225</option>
-                    </select>
-                    <p>Gyorsulás 0-100km/h-ra (s)</p>
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="9.2">9.2</option>
-                        <option value="7.4">8.5</option>
-                        <option value="9.2">7.4</option>
-                    </select>
-
-                </fieldset>
-                <fieldset>
-                    <legend>Erőátvitel</legend>
-                    <p>Típus</p>
-                    
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="Elsőkerék">Elsőkerék-meghajtás</option>
-                        <option value="Hátsókerék">Hátsókerék-meghajtás</option>
-                        <option value="4x4">4x4</option>
-                    </select>
-                    <p>Sebességváltó</p>
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="Hétfokozatú">Hétfokozatú automata, DSG</option>
-                        <option value="Hatfokozatú">Hatfokozatú manuális</option>
-                        <option value="Ötfokozatú">Ötfokozatú manuális</option>
-                    </select>
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>Tömeg</legend>
-                    <p>Megengedett vontatóterhelés fék nélkül (max. kg)</p>
-                    
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="szoftverfejleszto">750</option>
-                    </select>
-
-                    <p>Megengedett vontatóterhelés fékkel – 12% (max. kg)</p>
-                    
-                    <select name="teljesitmeny" id="teljesitmeny">
-                        <option value="2,2">2,200</option>
-                        <option value="2,0">2,000</option>
-                        <option value="1,8">1,800</option>
-                        <option value="1,6">1,600</option>
-                    </select>
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>Vélemény</legend>
-                    <p>Írja meg a véleményét!</p>
-                <textarea name="velemeny" id="velemeny">
-
-                </textarea>
-                </fieldset>
-                
-                <div class="gomb">
-                    <button type="submit" href="skoda.html">Küld</button>
-                </div>
-                
-
             </form>
 
         </article>
